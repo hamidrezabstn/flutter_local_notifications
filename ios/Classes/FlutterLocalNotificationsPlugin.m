@@ -161,12 +161,12 @@ typedef NS_ENUM(NSInteger, RepeatInterval) {
         if (requestedBadgePermission) {
             authorizationOptions += UNAuthorizationOptionBadge;
         }
-        [center requestAuthorizationWithOptions:(authorizationOptions) completionHandler:^(BOOL granted, NSError * _Nullable error) {
-            if(self->launchPayload != nil) {
-                [self handleSelectNotification:self->launchPayload];
-            }
-            result(@(granted));
-        }];
+        //[center requestAuthorizationWithOptions:(authorizationOptions) completionHandler:^(BOOL granted, NSError * _Nullable error) {
+          //  if(self->launchPayload != nil) {
+         //       [self handleSelectNotification:self->launchPayload];
+         //   }
+        //    result(@(granted));
+       // }];
     } else {
         UIUserNotificationType notificationTypes = 0;
         if (requestedSoundPermission) {
