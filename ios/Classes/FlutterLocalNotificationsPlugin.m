@@ -148,8 +148,8 @@ typedef NS_ENUM(NSInteger, RepeatInterval) {
     }
     
     if(@available(iOS 10.0, *)) {
-        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
-        center.delegate = self;
+        //UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        //center.delegate = self;
         
         UNAuthorizationOptions authorizationOptions = 0;
         if (requestedSoundPermission) {
